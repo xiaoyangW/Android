@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- 返回首页的按钮 -->
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bt_back"
+            android:onClick="back" />
+
+        <!-- 存储的按钮 -->
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bt_save"
+            android:onClick="save" />
+
+        <!-- 分享的按钮 -->
+
+        <Button
+            android:id="@+id/btn_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bt_share"
+            android:onClick="share" />
+    </RelativeLayout>
+
+    <!-- 主要绘图的区域 -->
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+    </RelativeLayout>
+
+
+
+    <!-- 横向的人物选项的导航 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <!-- 水平滚动条 -->
+
+        <HorizontalScrollView
+            android:id="@+id/hsv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+
+            <!-- 单选按钮组 -->
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb0"
+                    style="@style/style_r"
+                    android:tag="0"
+                    android:text="发型"
+                    tools:ignore="HardcodedText" />
+
+                <RadioButton
+                    android:id="@+id/rb1"
+                    style="@style/style_r"
+                    android:tag="1"
+                    android:text="脸型"
+                    tools:ignore="HardcodedText" />
+
+                <RadioButton
+                    android:id="@+id/rb2"
+                    style="@style/style_r"
+                    android:tag="2"
+                    android:text="眉毛"
+                    tools:ignore="HardcodedText" />
+
+                <RadioButton
+                    android:id="@+id/rb3"
+                    style="@style/style_r"
+                    android:tag="3"
+                    android:text="眼睛"
+                    tools:ignore="HardcodedText" />
+
+                <RadioButton
+                    android:id="@+id/rb4"
+                    style="@style/style_r"
+                    android:tag="4"
+                    android:text="嘴巴"
+                    tools:ignore="HardcodedText" />
+
+                <RadioButton
+                    android:id="@+id/rb5"
+                    style="@style/style_r"
+                    android:tag="5"
+                    android:text="特征"
+                    tools:ignore="HardcodedText" />
+
+                <RadioButton
+                    android:id="@+id/rb6"
+                    style="@style/style_r"
+                    android:tag="6"
+                    android:text="眼镜"
+                    tools:ignore="HardcodedText" />
+
+                <RadioButton
+                    android:id="@+id/rb7"
+                    style="@style/style_r"
+                    android:tag="7"
+                    android:text="衣服"
+                    tools:ignore="HardcodedText" />
+
+                <RadioButton
+                    android:id="@+id/rb8"
+                    style="@style/style_r"
+                    android:tag="8"
+                    android:text="帽子"
+                    tools:ignore="HardcodedText" />
+
+                <RadioButton
+                    android:id="@+id/rb9"
+                    style="@style/style_r"
+                    android:tag="9"
+                    android:text="爱好"
+                    tools:ignore="HardcodedText" />
+
+                <RadioButton
+                    android:id="@+id/rb10"
+                    style="@style/style_r"
+                    android:tag="10"
+                    android:text="背景"
+                    tools:ignore="HardcodedText" />
+
+                <RadioButton
+                    android:id="@+id/rb11"
+                    style="@style/style_r"
+                    android:tag="11"
+                    android:text="气泡"
+                    tools:ignore="HardcodedText" />
+            </RadioGroup>
+        </HorizontalScrollView>
+
+        <!-- 滚动条指示器 -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#a6a7a6" >
+
+            <TextView
+                android:id="@+id/line"
+                android:layout_width="80dp"
+                android:layout_height="2dp"
+                android:background="#0000ff" />
+        </FrameLayout>
+
+        <!-- 选择表情部件的列表 -->
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+</LinearLayout>

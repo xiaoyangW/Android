@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/WXY.iml" filepath="$PROJECT_DIR$/WXY.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bluetooth/bluetooth.iml" filepath="$PROJECT_DIR$/bluetooth/bluetooth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/coordinatorlayout/coordinatorlayout.iml" filepath="$PROJECT_DIR$/coordinatorlayout/coordinatorlayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customview/customview.iml" filepath="$PROJECT_DIR$/customview/customview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/developerheadlines/developerheadlines.iml" filepath="$PROJECT_DIR$/developerheadlines/developerheadlines.iml" />
+      <module fileurl="file://$PROJECT_DIR$/faceq/faceq.iml" filepath="$PROJECT_DIR$/faceq/faceq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/filemanage/filemanage.iml" filepath="$PROJECT_DIR$/filemanage/filemanage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/httpweb/httpweb.iml" filepath="$PROJECT_DIR$/httpweb/httpweb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mob/mob.iml" filepath="$PROJECT_DIR$/mob/mob.iml" />
+      <module fileurl="file://$PROJECT_DIR$/music/music.iml" filepath="$PROJECT_DIR$/music/music.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myhttpweb/myhttpweb.iml" filepath="$PROJECT_DIR$/myhttpweb/myhttpweb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/notifications/notifications.iml" filepath="$PROJECT_DIR$/notifications/notifications.iml" />
+      <module fileurl="file://$PROJECT_DIR$/okhttp/okhttp.iml" filepath="$PROJECT_DIR$/okhttp/okhttp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/refresh/refresh.iml" filepath="$PROJECT_DIR$/refresh/refresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sms/sms.iml" filepath="$PROJECT_DIR$/sms/sms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/startui/startui.iml" filepath="$PROJECT_DIR$/startui/startui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/toolbar/toolbar.iml" filepath="$PROJECT_DIR$/toolbar/toolbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/versions/versions.iml" filepath="$PROJECT_DIR$/versions/versions.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeefee">
+<!--图标-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="创造你的卡通形象！"
+        android:textSize="10dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView" />
+    <!--人形-->
+    <LinearLayout
+        android:id="@+id/ll_people"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <Button
+            android:id="@+id/bt_man"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/boy_selector"
+            android:layout_alignBaseline="@+id/bt_woman"
+            android:layout_alignBottom="@+id/bt_woman"
+            android:layout_toStartOf="@+id/bt_woman" />
+
+        <Button
+            android:id="@+id/bt_woman"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/girl_selector"
+            android:layout_below="@+id/textView"
+            android:layout_alignEnd="@+id/imageView2" />
+    </LinearLayout>
+<!--btn-->
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ll_people"
+        android:id="@+id/ll_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="42dp"
+            android:background="@drawable/double_btn"
+            android:id="@+id/btn_double" />
+
+        <Button
+            android:layout_marginTop="12dp"
+            android:layout_width="200dp"
+            android:layout_height="42dp"
+            android:background="@drawable/history_btn"
+            android:id="@+id/btn_history" />
+
+        <Button
+            android:layout_marginTop="12dp"
+            android:layout_width="200dp"
+            android:layout_height="42dp"
+            android:background="@drawable/more_selector"
+            android:id="@+id/btn_more" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pic_startpage_logo_faceq"
+        android:layout_marginTop="129dp"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/ll_people" />
+
+
+</RelativeLayout>

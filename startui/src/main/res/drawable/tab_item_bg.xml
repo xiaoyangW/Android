@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 绘制底部的边框色 -->
+    <item>
+        <shape>
+            <solid
+                android:color="@color/colorGray"
+                ></solid>
+        </shape>
+    </item>
+    <!-- 绘制上面的填充色 -->
+    <item
+        android:right="1dp"
+        android:top="1dp"
+        >
+        <shape>
+            <solid
+                android:color="@color/colorGray"
+                ></solid>
+        </shape>
+    </item>
+</layer-list>
